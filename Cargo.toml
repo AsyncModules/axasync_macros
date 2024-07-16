@@ -1,0 +1,12 @@
+[package]
+name = "axasync_macros"
+version = "0.1.0"
+edition = "2021"
+authors = ["Fangliang Zhao <1491657576@qq.com>"]
+
+[dependencies]
+syn = { version = "2.0.15", features = ["full", "extra-traits"] }
+quote = "1.0.9"
+
+[lib]
+proc-macro = true
