@@ -10,7 +10,6 @@ pub fn async_main(_args: TokenStream, item: TokenStream) -> TokenStream {
     quote! {
         #(#attrs)*
         fn main() {
-            #[cfg(feature = "axstd")]
             axstd::futures::block_on(move || async #block);
         }
     }.into()
